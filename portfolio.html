@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            position:fixed;
+            top: 0;
+            border-bottom: 2px solid rgb(190, 189, 189);
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            z-index: 2;
+        }        
+        #Name{
+            background-color: teal;
+            color: white;
+            position: fixed;
+            height: 75px;
+            width: 300px;
+            text-align: center;
+            padding-top: 25px;
+            left: 265px;
+            float: left;
+        }
+        body{
+            background-image: url(assets/images/crossline-lines.png);
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        
+        footer{
+            background: #666666;
+            text-align: center;
+            border-top: 10px solid teal;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            bottom: 0;
+            z-index: 5;
+        }
+        #copyright{
+            color: rgb(206, 202, 202);
+            position:relative;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .links{
+            float: right;
+            padding: 10px;
+            margin-top: 25px;   
+        }
+        #IndexLink,
+        #PortfolioLink{
+            border-right: 2px solid lightgrey;
+        }
+        #ContactLink{
+            margin-right: 275px;
+        }
+        a{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        #copyright{
+            color: rgb(206, 202, 202);
+            position:relative;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #PortfolioItems{
+            width: 960px;
+            background-color: white;
+            border: 1px solid rgb(248, 235, 206);
+            left: 275px;
+            margin: auto;
+            top: 20%;
+            padding: 10px;
+            z-index: 3;
+            padding-bottom: 30px;
+        }
+        #PortfolioItemsTitle{
+            color: teal;
+            margin: 20px;
+            border-bottom: 2px solid lightgray;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .PortfolioPics{
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            float: left;
+        }
+        .cityscapes{
+            background-image: url(https://i.ebayimg.com/images/g/D6YAAOSwuMZZKGXf/s-l300.jpg)
+        }
+        .fashion{
+            background-image: url(https://content.asos-media.com/-/media/images/articles/men/2019/03/02-sat/milan-street-style/asos-mw-article-street-style-mfw-thumb.jpg?h=300&w=300&hash=850BC351BCAB6617B6AC57591908B470)
+        }
+        .food{
+            background-image: url(https://www.health.harvard.edu/media/content/images/Foods-fight-inflammation.jpg)
+        }
+        .nightlife{
+            background-image: url(http://discoversavannahga.com/wp-content/uploads/2015/12/downtown-1.jpg)
+        }
+        .PortfolioPicsText{
+            height: 50px;
+            text-align: center;
+            background-color: teal;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 25px;
+            font-size: 20px;
+            margin-top: 200px;
+        }
+        .clearfix::after{
+            content: "";
+            display: table;
+            width: 100%;
+            clear: both;
+        }
+</style>
+
+
+
+<html>
+
+    <header>
+
+        <div id="Name">
+            <h1>Christian Livick</h1>
+        </div>
+
+        <div id="ContactLink" class="links">
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div id="PortfolioLink" class="links">
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+
+        <div id="IndexLink" class="links">
+            <a href="index.html">About</a>
+        </div>
+
+    </header>
+
+    <body>
+        
+        <div class="clearfix" id="PortfolioItems">
+
+            <div id="PortfolioItemsTitle">
+                
+                <h1>Portfolio</h1>
+            
+            </div>
+
+            <div class="cityscapes PortfolioPics">
+            
+                <div class="PortfolioPicsText">Hangman</div>
+            
+            </div>
+
+            <div class="fashion PortfolioPics">
+                    
+                <div class="PortfolioPicsText">RPG Game</div>
+
+            </div>
+
+            <div class="food PortfolioPics">
+                    
+                <div class="PortfolioPicsText">Trivia Game</div>
+
+            </div>
+
+            <div class="nightlife PortfolioPics">
+                    
+                <div class="PortfolioPicsText">Rock Paper Scissors</div>
+
+            </div>
+
+
+        </div>
+
+    </body>
+
+
+    <footer>
+        <p id=copyright>Copyright &copy;</p>
+    </footer>
+
+</html>
